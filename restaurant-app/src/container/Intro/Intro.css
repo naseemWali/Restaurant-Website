@@ -1,0 +1,63 @@
+
+.app__video {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.app__video video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.app__video-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.app__video-overlay_circle{
+    border: 2px solid yellowgreen;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    
+    .app__video  {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      } 
+}
+
+
+@media screen and (max-width:1150px) {
+    .app__video{
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+.app__video-overlay_circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid yellowgreen;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
